@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ben's Basic Website</title>
+<style>
+body{
+background-color:lightgrey;
+margin:20px;
+text-align:center;
+font-family:"Comic Sans MS";
+color:black;
+}
+p{
+background-color:white;
+
+
+}
+
+div.centerhead {
+background-color:black;
+color:white;
+
+padding:40px;
+text-align:center;
+}
+</style>
+
+</head>
+<body>
+
+<div class="centerhead">
+<h1>Welcome to Daddy's Website<h1/>
+</div>
+
+<p>
+This is a very basic website.
+<br>
+Hello
+<br><br><br>
+<button type="button"
+onclick="writebelow()">
+Click me</button>
+<br>
+<div id="period"></div>
+
+
+
+</p>
+
+<script>
+var string;
+function writebelow() {
+	//alert("Hello");
+	//wait(5);
+	var times;
+	++times;
+	var test = times;
+	
+	var string = "Ouch!";
+	while (test !=0) {
+	
+	string = <br> + string;
+	--test;
+	
+	}
+	
+	
+	
+	document.getElementById("period").innerHTML = string;
+	
+}
+
+
+</script>
+
+
+</body>
+</html>
